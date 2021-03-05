@@ -25,7 +25,6 @@ const dataReducer = (state = initialState, action) => {
         };
       }
       case 'SET_NEXT_PAGE': {
-        console.log('fksjdhgflaksj',action.data)
         return {
             ...state,
             currentPage: state.currentPage + action.data

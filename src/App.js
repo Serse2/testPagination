@@ -13,7 +13,6 @@ function App() {
   const [peopleDisplay, setPeopleDisplay] = useState([])
   const [peopleFiltred, setPeopleFiltred] = useState([])
   const [totalPage, setTotalPage] = useState(0)
-  console.log(peopleDisplay)
 
   const getFetch = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
