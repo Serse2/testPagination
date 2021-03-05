@@ -21,7 +21,7 @@ function App() {
   }
 
   const searchInput = (value) => {
-    setPeopleFiltred(people.filter(p => p.name.includes(value)))
+    setPeopleFiltred(people.filter(p => p.name.toLowerCase().includes(value.toLowerCase()) || p.email.toLowerCase().includes(value.toLowerCase()) ))
   }
 
   const pages = [];
